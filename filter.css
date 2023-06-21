@@ -12,7 +12,6 @@
 }
 .navbar{
     height: 100vh;
-    /* flex: 1; */
     display: block;
     padding: 0.5rem 1.3rem;
     width: 20%;
@@ -23,6 +22,7 @@
 
     background-color: rgb(173, 182, 182);
 }
+
 input[type="text"]{
     margin: 2rem 0;
     padding: 3px 10px ;
@@ -37,8 +37,6 @@ h2{
 }
 .catogories{
     display: flex;
-    /* display:
-    inline; */
     flex-direction: column;
     align-items: baseline;
     gap: 1rem;
@@ -63,8 +61,7 @@ main{
     position: absolute;
     width: 80%;
     left: 20%;
-    /* background-color: aqua; */
-    /* z-index: 33; */
+
 }
 main h2{
     margin: 2px 5rem;
@@ -93,7 +90,7 @@ img{
     height: 195px;
     width: 308px;
     object-fit: contain;
-    /* background-color: azure; */
+    
 }
 .product-name{
     margin: 1rem;
