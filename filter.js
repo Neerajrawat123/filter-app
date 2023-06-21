@@ -144,7 +144,7 @@ const showCards = (filterData) => {
 
     productContainer.innerHTML =
         filterData.map((product) => 
-            // console.log(product)
+            
             `
             <div class="product">
             <img src=${product.img}>
@@ -155,14 +155,12 @@ const showCards = (filterData) => {
             `
         ).join("")
 
-
-
-
 }
+
+
 input.addEventListener("keyup", (e) =>{
     const searchValue= e.target.value.toLowerCase()
-    // console.log(searchValue)
-
+    
     if (searchValue) {
         console.log("sdf")
         showCards(data.filter((product) => product.name.toLowerCase().indexOf(searchValue)!=-1))
@@ -173,17 +171,8 @@ input.addEventListener("keyup", (e) =>{
 })
 
 
-// productContainer.innerHTML = `
-// <img src=${data[i].img}>
-//  <span class="product-name">${data[i].name}</span>
-//                 <span class="product-price">${data[i].price}</span>
 
-
-// `
 showCards(data)
-
-
-// window.addEventListener("load", showCards(data))
 
 catogory.forEach(element => {
     element.addEventListener("click", () =>{
